@@ -9,21 +9,21 @@ const Gallery: React.FC = () => {
 
   const images = [
     {
-      src: 'gallery-1.jpg',
+      src: '/gallery-1.jpg',
       alt: 'Meeting Room'
     },
     {
-      src: 'gallery-2.jpg',
+      src: '/gallery-2.jpg',
       alt: 'Open Office Space'
     },
     {
-      src: 'gallery-3.jpg',
+      src: '/gallery-3.jpg',
       alt: 'Collaborative Lounge Space'
     }
   ];
 
   return (
-    <section className="bg-[#2B2B28] py-16 md:py-24 border-t border-[#3F4C63]">
+    <section id="galeria" className="bg-[#2B2B28] py-16 md:py-24 border-t border-[#3F4C63]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}

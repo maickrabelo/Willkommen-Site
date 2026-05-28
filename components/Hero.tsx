@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Hero: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language, setLanguage } = useLanguage();
   const { scrollY } = useScroll();
   
   // Parallax effects
@@ -44,17 +44,44 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="flex items-center space-x-4 mb-6"
+            className="flex flex-col space-y-6 mb-8"
           >
-            <div className="inline-flex items-center space-x-2 bg-[#3F4C63]/50 border border-[#3F4C63] px-3 py-1 rounded-full">
+            {/* Logo */}
+            <div className="flex items-center space-x-4">
+              <img 
+                src="https://i.ibb.co/833GRQP/2-Logo-Willkommen.png" 
+                alt="Willkommen Logo" 
+                className="h-10 sm:h-14 w-auto brightness-110 object-contain"
+              />
+            </div>
+
+            {/* Language Switcher */}
+            <div className="flex items-center space-x-3">
+              {[
+                { code: 'pt', label: 'Português' },
+                { code: 'en', label: 'English' },
+                { code: 'de', label: 'Deutsch' },
+                { code: 'es', label: 'Español' }
+              ].map((lang) => (
+                <button
+                  key={lang.code}
+                  onClick={() => setLanguage(lang.code as any)}
+                  className={`text-[10px] sm:text-xs font-bold px-3 py-1.5 rounded border transition-all ${
+                    language === lang.code 
+                    ? 'bg-[#FFCF00] text-[#2B2B28] border-[#FFCF00]' 
+                    : 'text-[#D2D3D5] border-[#3F4C63] hover:border-[#FFCF00]'
+                  }`}
+                >
+                  {lang.label}
+                </button>
+              ))}
+            </div>
+
+            {/* Badge */}
+            <div className="inline-flex items-center space-x-2 bg-[#3F4C63]/50 border border-[#3F4C63] px-3 py-1 rounded-full w-fit">
               <Globe className="w-4 h-4 text-[#FFCF00]" />
               <span className="text-[#D2D3D5] text-[10px] sm:text-xs font-semibold uppercase tracking-widest">{t.hero.badge}</span>
             </div>
-            <img 
-              src="https://i.ibb.co/833GRQP/2-Logo-Willkommen.png" 
-              alt="Willkommen Logo" 
-              className="h-8 sm:h-12 w-auto brightness-110 object-contain"
-            />
           </motion.div>
           
           <motion.h1 
@@ -81,21 +108,23 @@ const Hero: React.FC = () => {
             transition={{ delay: 0.8 }}
             className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
           >
-            <motion.button 
+            <motion.a 
+              href="#equipe"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="group flex items-center justify-center space-x-2 bg-[#FFCF00] text-[#2B2B28] px-8 py-4 rounded font-bold text-lg hover:shadow-[0_0_20px_rgba(255,207,0,0.4)] transition-shadow"
             >
               <span>{t.hero.ctaPrimary}</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </motion.button>
-            <motion.button 
+            </motion.a>
+            <motion.a 
+              href="#galeria"
               whileHover={{ scale: 1.05, borderColor: "#FFCF00" }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center justify-center space-x-2 bg-transparent border-2 border-[#3F4C63] text-white px-8 py-4 rounded font-bold text-lg transition-colors"
             >
               {t.hero.ctaSecondary}
-            </motion.button>
+            </motion.a>
           </motion.div>
         </motion.div>
       </div>

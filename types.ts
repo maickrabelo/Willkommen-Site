@@ -1,5 +1,5 @@
 
-export type Language = 'pt' | 'en' | 'de';
+export type Language = 'pt' | 'en' | 'de' | 'es';
 
 export interface Service {
   id: string;
