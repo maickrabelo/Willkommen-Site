@@ -155,6 +155,14 @@ export const translations: Record<Language, any> = {
           image: 'https://i.ibb.co/Y45X2sWG/file-2.jpg',
           email: 'jordao@willkommen.website',
           phone: '+55 34 9 9221-0009'
+        },
+        {
+          name: 'Luiz Lunardi',
+          role: 'Associate',
+          bio: 'Consultor jurídico, analista financeiro e especialista em fusões e aquisições (M&A) há mais de 12 anos, com foco nos mercados de geração de energia e agronegócios. Planejou e estruturou diversas operações para empresas de varejo, incluindo construção, grandes produtores de agronegócio e grupos de geração de energia renovável e termelétrica.',
+          image: 'https://i.ibb.co/wFdgLFFY/Whats-App-Image-2026-06-15-at-16-22-00.jpg',
+          email: 'lunardi@bridlog.com',
+          phone: '+55 47 9 9788-6000'
         }
       ]
     },
@@ -340,6 +348,14 @@ export const translations: Record<Language, any> = {
           image: 'https://i.ibb.co/Y45X2sWG/file-2.jpg',
           email: 'jordao@willkommen.website',
           phone: '+55 34 9 9221-0009'
+        },
+        {
+          name: 'Luiz Lunardi',
+          role: 'Associate',
+          bio: 'Legal advisor, financial analyst and specialist in mergers and acquistions (M&A) for over 12 years, focused on power generation and agribusiness markets. He has planned and structured several operations for retail companies, including construction, major agribusiness producers and renewable and thermoeletric energy generation groups.',
+          image: 'https://i.ibb.co/wFdgLFFY/Whats-App-Image-2026-06-15-at-16-22-00.jpg',
+          email: 'lunardi@bridlog.com',
+          phone: '+55 47 9 9788-6000'
         }
       ]
     },
@@ -525,6 +541,14 @@ export const translations: Record<Language, any> = {
           image: 'https://i.ibb.co/Y45X2sWG/file-2.jpg',
           email: 'jordao@willkommen.website',
           phone: '+55 34 9 9221-0009'
+        },
+        {
+          name: 'Luiz Lunardi',
+          role: 'Associate',
+          bio: 'Rechtsberater, Finanzanalyst und Spezialist für Mergers & Acquisitions (M&A) seit über 12 Jahren, mit Schwerpunkt auf den Märkten für Energieerzeugung und Agrarindustrie. Er hat verschiedene Operationen für Einzelhandelsunternehmen geplant und strukturiert, darunter Bauwesen, große Agrarproduzenten und Gruppen für erneuerbare sowie thermoelektrische Energieerzeugung.',
+          image: 'https://i.ibb.co/wFdgLFFY/Whats-App-Image-2026-06-15-at-16-22-00.jpg',
+          email: 'lunardi@bridlog.com',
+          phone: '+55 47 9 9788-6000'
         }
       ]
     },
@@ -710,6 +734,14 @@ export const translations: Record<Language, any> = {
           image: 'https://i.ibb.co/Y45X2sWG/file-2.jpg',
           email: 'jordao@willkommen.website',
           phone: '+55 34 9 9221-0009'
+        },
+        {
+          name: 'Luiz Lunardi',
+          role: 'Associate',
+          bio: 'Asesor legal, analista financiero y especialista en fusiones y adquisiciones (M&A) durante más de 12 años, enfocado en los mercados de generación de energía y agronegocios. Ha planificado y estructurado diversas operaciones para empresas minoristas, incluyendo construcción, grandes productores de agronegocios y grupos de generación de energía renovable y termoeléctrica.',
+          image: 'https://i.ibb.co/wFdgLFFY/Whats-App-Image-2026-06-15-at-16-22-00.jpg',
+          email: 'lunardi@bridlog.com',
+          phone: '+55 47 9 9788-6000'
         }
       ]
     },

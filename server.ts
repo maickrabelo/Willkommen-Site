@@ -42,7 +42,7 @@ async function startServer() {
 
       const mailOptions = {
         from: `"${name}" <${process.env.SMTP_USER}>`,
-        to: "mauricio@willkommen.website, jordao@willkommen.website",
+        to: "mauricio@willkommen.website, jordao@willkommen.website, lunardi@bridlog.com",
         subject: `Novo Contato do Site: ${objective}`,
         text: `
           Nome: ${name}
